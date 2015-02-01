@@ -1,0 +1,16 @@
+body {
+  
+  padding-top: 70px;
+}
+
+a.linkstyle,
+a.linkstyle:hover{
+    color:#FA7D3C;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#footer{
+    height:20px;
+    bcgroun-color:#ff0000;
+}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+<div class="jumbotron">
+
+	<div class="row">
+	
+	  <div class="col-md-8"></div>
+	  
+	  <div class="col-md-3">
+	  
+	  	<form action="" method="post" name="login">
+		    {{form.hidden_tag()}}
+		    <p>
+		        Please enter your username:<br>
+		        {{form.username( )}}
+		        {% for error in form.errors.username %}
+		        <span class="label label-danger">[{{error}}]</span>
+		        {% endfor %}
+		    </p>
+		    <p>
+		        Please enter your password:<br>
+		        {{form.password( )}}
+		        {% for error in form.errors.password %}
+		        <span class="label label-danger">[{{error}}]</span>
+		        {% endfor %}
+		    </p>
+		    <p><input type="submit" value="Sign In"></p>
+		</form>
+	  
+	  </div>
+	  
+	  
+
+	  <div class="col-md-1"></div>
+	  
+	</div>
+	
+</div>
+</div>
+
+
+{% endblock %}

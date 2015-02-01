@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Posts</h2>
+
+{% for item in posts %}
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-2"> <img src="{{item.avatra}}" alt="gravartar" class="img-thumbnail"> </div>
+	<div class="col-md-6">        
+		{{item.author}}<br>
+		{{item.email}}<br>
+		{{item.posts}}<br>	
+	</div>   
+
+  <div class="col-md-2"></div>
+</div>
+</div>
+{% endfor %}
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-2"></div>
+  <div class="col-md-6"></div>
+  <div class="col-md-2"></div>
+</div>
+</div>
+
+{% endblock %}

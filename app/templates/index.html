@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a class="linkstyle" href="">woshilianjieawoshilianjie</a>
+
+{% for item in posts %}
+<p> {{ item.author }} says: <b>{{item.body}} </b></p>
+{% endfor %}
+
+
+{% endblock %}

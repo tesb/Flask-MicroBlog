@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Sign in</h1>
+
+<form action="" method="post" name="login">
+	{{form.hidden_tag()}}
+	<p>
+	Please enter your OpenId:  <br>
+	{{ form.openid(size=60) }} <br>
+	{% for error in form.errors.openid %}
+	<span style="color:red;"> [{{ error }}] </span>
+	{% endfor %}
+	</p>
+	<p>{{form.remember_me}} Remember Me </p>
+	<p><input type="submit" value="Sign In"></p>
+	
+
+</form>
+
+<img src="{{url_for('static',filename='images/down.jpg')}}" alt="..." class="img-rounded">
+<img src="{{url_for('static',filename='images/down.jpg')}}" alt="..." class="img-circle">
+<img src="{{url_for('static',filename='images/down.jpg')}}" alt="..." class="img-thumbnail">
+
+
+{% endblock %}
