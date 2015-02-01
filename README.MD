@@ -2,6 +2,7 @@
 
 ###windows 环境下###
 
+```
 ---/
 ---app/
     ---static/
@@ -17,3 +18,5 @@
     ---app.db
     ---config.py
     ---run.py
+```
+
